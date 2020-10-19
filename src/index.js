@@ -83,9 +83,10 @@ const showResults = function(){
     }
   });
 
-  DOMSelectors.resultsContainer.innerHTML = `<li>${numCorrect} out of 10</li>`;
-}
-
-buildQuiz();
+  DOMSelectors.resultsContainer.insertAdjacentHTML(
+    "beforeend", `<li>${numCorrect} out of ${animeQuestions.length}</li>`);
+};
 
 DOMSelectors.submitButton.addEventListener('click', showResults);
+
+buildQuiz();
