@@ -49,11 +49,11 @@ html, body {
   width: 22vw;
 }
 
-.anime-image {
+.anime-list .anime-image {
   height: 18rem;
 }
 
-.btns {
+.anime-list .btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +65,7 @@ html, body {
           align-items: center;
 }
 
-.btn {
+.anime-list .btn {
   border-radius: 2rem;
   padding: 1rem;
   margin: 1rem auto;
@@ -79,13 +79,13 @@ html, body {
   font-size: 2.2rem;
 }
 
-.btn:hover {
+.anime-list .btn:hover {
   background-color: transparent;
   border: 1px solid pink;
   color: pink;
 }
 
-.btn:active {
+.anime-list .btn:active {
   -webkit-transform: scale(1.1) translateY(-1px);
           transform: scale(1.1) translateY(-1px);
 }

@@ -1,39 +1,30 @@
 import {animeQuestions} from "./questions";
 
 const DOMSelectors = {
+<<<<<<< HEAD
     quizContainer: document.querySelector('quiz'),
     resultsContainer: document.querySelector('results'),
     submitButton: document.querySelector('submit'),
+=======
+    quizContainer : document.getElementById('quiz'),
+    resultsContainer : document.getElementById('results'),
+    submitButton : document.getElementById('submit')
+>>>>>>> bd96b8aaf936919deca4a6b65e9617513ab65e8b
 };
 
-function buildQuiz(){
-  const output = [];
+const buildQuiz = function(){
+    e.preventDefault();
+    DOMSelectors.quizContainer.innerHTML = ""; 
+    animeQuestions.forEach((item) => 
+    DOMSelectors.quizContainer.insertAdjacentHTML(
+        "afterbegin",
+      ``
+        )
+    );
+};
 
-  animeQuestions.forEach(
-    (currentQuestion, questionNumber) => {
-      const answers = [];
 
-      for(letter in currentQuestion.answers){
-        answers.push(
-          `<label>
-            <input type="radio" name="question${questionNumber}" value="${letter}">
-            ${letter} :
-            ${currentQuestion.answers[letter]}
-          </label>`
-        );
-      }
-
-      output.push(
-        `<div class="question"> ${currentQuestion.question} </div>
-        <div class="answers"> ${answers.join('')} </div>`
-      );
-    }
-  );
-
-  DOMSelectors.quizContainer.innerHTML = output.join('');
-}
-
-function showResults(){
+const showResults = function(){
   const answerContainers = DOMSelectors.quizContainer.querySelectorAll('.answers');
 
   let numCorrect = 0;
