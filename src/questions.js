@@ -1,5 +1,6 @@
 const animeQuestions = [
     {
+      img:"",
       question: "Meow?",
       answers: {
         a: "asdf",
@@ -9,6 +10,7 @@ const animeQuestions = [
       correctAnswer: "c"
     },
     {
+      img:"",
       question: "Bark?",
       answers: {
         a: "ty",
@@ -18,6 +20,7 @@ const animeQuestions = [
       correctAnswer: "c"
     },
     {
+      img:"",
       question: "Chirp?",
       answers: {
         a: ";lkj",
