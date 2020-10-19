@@ -43,7 +43,7 @@ const animeQuestions = [
   },
   {
     img:"AC.jpg",
-    question: "What is the name of the teacher in this Anime?",
+    question: "What is the name of the teacher in this anime?",
     answers: {
       a: "Assasination Classroom",
       b: "Nagisa",
@@ -52,9 +52,63 @@ const animeQuestions = [
     },
     correctAnswer: "c"
   },
+  {
+    img:"Banana-fish.jpg",
+    question: "What is the name of this anime?",
+    answers: {
+      a: "Chiken wing",
+      b: "Hot dog and baloney",
+      c: "Chicken and Macaroni",
+      d: "Banana Fish"
+    },
+    correctAnswer: "d"
+  },
+  {
+    img:"Baccano.jpg",
+    question: "Name the anime/manga.",
+    answers: {
+      a: "Gomennasai",
+      b: "Baccano",
+      c: "Miria Harvent",
+      d: "Isaac Dian"
+    },
+    correctAnswer: "b"
+  },
+  {
+    img:"Tsuki-ga-kirei.jpg",
+    question: "Name the main female character.",
+    answers: {
+      a: "Kotarou",
+      b: "Akane",
+      c: "Tsuki ga Kirei",
+      d: "Chinatsu"
+    },
+    correctAnswer: "b"
+  },
+  {
+    img:"princess-mononoke.jpg",
+    question: "Name the anime.",
+    answers: {
+      a: "Momonoke",
+      b: "Souken",
+      c: "Genkai",
+      d: "Tokuji"
+    },
+    correctAnswer: "a"
 
-
-
+  },
+  {
+    img:"Log-horizon.jpg",
+    question: "Name the anime.",
+    answers: {
+      a: "Log Horizon",
+      b: "Ma rio",
+      c: "Camelot",
+      d: "Save the Princess!!"
+    },
+    correctAnswer: "a"
+    
+  },
 
 ];
 

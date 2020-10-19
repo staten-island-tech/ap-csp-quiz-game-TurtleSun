@@ -5,4 +5,88 @@ html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem auto;
+  width: 90vw;
+  background-color: white;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.anime {
+  font-size: 2.5rem;
+  margin: 1rem auto;
+}
+
+.anime-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  padding: 2rem 1rem;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  list-style: none;
+  background-color: pink;
+  width: 22vw;
+}
+
+.anime-image {
+  height: 18rem;
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  margin: 4rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  background-color: pink;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  width: 20rem;
+  height: 8rem;
+  font-size: 2.2rem;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid pink;
+  color: pink;
+}
+
+.btn:active {
+  -webkit-transform: scale(1.1) translateY(-1px);
+          transform: scale(1.1) translateY(-1px);
+}
 /*# sourceMappingURL=style.css.map */
