@@ -7,7 +7,7 @@ const animeQuestions = [
       b: "Super Saiyan",
       c: "Dragon Ball Z"
     },
-    correctAnswer: "c"
+    correctAnswer: "Dragon Ball Z"
   },
   {
     img:"media/Naruto.png",
@@ -17,7 +17,7 @@ const animeQuestions = [
       b: "Shippuden",
       c: "Ninja"
     },
-    correctAnswer: "a"
+    correctAnswer: "Naruto"
   },
   {
     img:"One-piece.png",
@@ -28,7 +28,7 @@ const animeQuestions = [
       c: "Treasure Hunt",
       d: "Monkey D. Luffy"
     },
-    correctAnswer: "d"
+    correctAnswer: "Monkey D. Luffy"
   },
   {
     img:"Horimiya.jpg",
@@ -39,7 +39,7 @@ const animeQuestions = [
       c: "Watashi wa nihongo wo hanashimasen",
       d: "Horimiya"
     },
-    correctAnswer: "d"
+    correctAnswer: "Horimiya"
   },
   {
     img:"AC.jpg",
@@ -50,7 +50,7 @@ const animeQuestions = [
       c: "Koro sensei",
       d: "Octo sensei"
     },
-    correctAnswer: "c"
+    correctAnswer: "Koro sensei"
   },
   {
     img:"Banana-fish.jpg",
@@ -61,7 +61,7 @@ const animeQuestions = [
       c: "Chicken and Macaroni",
       d: "Banana Fish"
     },
-    correctAnswer: "d"
+    correctAnswer: "Banana Fish"
   },
   {
     img:"Baccano.jpg",
@@ -72,7 +72,7 @@ const animeQuestions = [
       c: "Miria Harvent",
       d: "Isaac Dian"
     },
-    correctAnswer: "b"
+    correctAnswer: "Baccano"
   },
   {
     img:"Tsuki-ga-kirei.jpg",
@@ -83,7 +83,7 @@ const animeQuestions = [
       c: "Tsuki ga Kirei",
       d: "Chinatsu"
     },
-    correctAnswer: "b"
+    correctAnswer: "Akane"
   },
   {
     img:"princess-mononoke.jpg",
@@ -94,7 +94,7 @@ const animeQuestions = [
       c: "Genkai",
       d: "Tokuji"
     },
-    correctAnswer: "a"
+    correctAnswer: "Momonoke"
 
   },
   {
@@ -106,7 +106,7 @@ const animeQuestions = [
       c: "Camelot",
       d: "Save the Princess!!"
     },
-    correctAnswer: "a"
+    correctAnswer: "Log Horizon"
     
   },
 

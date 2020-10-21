@@ -76,13 +76,13 @@ const showResults = function(){
     
     if (userAnswer === `${question.correctAnswer}`) {
       numCorrect++;
-      document.getElementById(`${question.answers}`).style.color = "light green";
+      document.getElementById(`${question.number}`).style.color = "light green";
 
     } else {
-      document.getElementById(`${question.answers}`).style.color = "red";
+      document.getElementById(`${question.number}`).style.color = "red";
     }
   });
-
+//console.log (userAnswer);
   DOMSelectors.resultsContainer.insertAdjacentHTML(
     "beforeend", `<li>${numCorrect} out of ${animeQuestions.length}</li>`);
 };
