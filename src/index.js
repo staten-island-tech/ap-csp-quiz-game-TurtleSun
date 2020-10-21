@@ -39,7 +39,7 @@ const buildQuiz = function(){
 
 
 const showResults = function () {
-  var numCorrect = 0;
+  let numCorrect = 0;
 
   animeQuestions.forEach((ques) => {
     const userAnswer = document.querySelector(
@@ -63,7 +63,7 @@ const showResults = function () {
   let numCorrect = 0;
   animeQuestions.forEach((ques) => {
     if (document.querySelector(`input[name="${ques.number}"]:checked`)) {
-      var userAnswer = document.querySelector(
+      const userAnswer = document.querySelector(
         `input[name="${ques.number}"]:checked`
       ).value;
       if (userAnswer == `${ques.correctAnswer}`) {
