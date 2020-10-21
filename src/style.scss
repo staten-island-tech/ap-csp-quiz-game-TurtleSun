@@ -5,11 +5,32 @@ html,body{
     font-size: 62.5%;
     box-sizing: border-box;
 }
+h1{
+  font-size: 4rem;
+  margin-top: 2%;
+  text-align: center;
+}
+ul{
+  list-style: none;
+  font-weight: bold;
+  padding: 1%;
+  border-radius: 2rem;
+}
+
+li{
+  border:solid pink 2px;
+  border-radius: 2.5rem;
+  text-align: left;
+  align-items: left;
+  margin:1.5rem;
+  padding: 1rem;
+}
 
 .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     margin: 3rem auto;
     width: 90vw;
     background-color: white;
@@ -18,21 +39,40 @@ html,body{
   .anime {
     font-size: 2.5rem;
     margin: 1rem auto;
+    list-style: none;
   }
   .anime-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
     padding: 2rem 1rem;
     margin: 1rem auto;
     text-transform: uppercase;
     list-style: none;
     background-color: pink;
     width: 22vw;
-  .anime-image {
-    height: 18rem;
+  }
+
+  .anime-image{
+    border:none;
+    display: flex;
+    height: auto;
+    width: 30vw;
+    align-items: center;
+    margin:2%;
+  }
+  .anime-question{
+    
+  }
+  .anime-answers{
+    width: 30vw;
+    align-items: center;
+    background-color: rgb(182, 111, 230);
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 3rem;
   }
   .btns{
     display: flex;
@@ -61,4 +101,4 @@ html,body{
   .btn:active {
     transform: scale(1.1) translateY(-1px);
   }
-}
+
