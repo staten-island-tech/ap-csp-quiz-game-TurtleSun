@@ -6,7 +6,9 @@ const animeQuestions = [
     answers: {
       a: "Goku",
       b: "Super Saiyan",
-      c: "Dragon Ball Z"
+      c: "Dragon Ball Z",
+      d: "Omae Wa"
+
     },
     correctAnswer: "Dragon Ball Z"
   },
@@ -17,7 +19,8 @@ const animeQuestions = [
     answers: {
       a: "Naruto",
       b: "Shippuden",
-      c: "Ninja"
+      c: "Ninja",
+      d: "Mou Shindeiru"
     },
     correctAnswer: "Naruto"
   },
