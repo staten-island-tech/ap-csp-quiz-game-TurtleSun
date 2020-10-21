@@ -8,40 +8,6 @@ const DOMSelectors = {
 
 const buildQuiz = function(){
 
-  /* const output = [];
-
-  // for each question...
-  myQuestions.forEach(
-    (currentQuestion, questionNumber) => {
-
-      // variable to store the list of possible answers
-      const answers = [];
-
-      // and for each available answer...
-      for(letter in currentQuestion.answers){
-
-        // ...add an HTML radio button
-        answers.push(
-          `<label>
-            <input type="radio" name="question${questionNumber}" value="${letter}">
-            ${letter} :
-            ${currentQuestion.answers[letter]}
-          </label>`
-        );
-      }
-
-      // add this question and its answers to the output
-      output.push(
-        `<div class="question"> ${currentQuestion.question} </div>
-        <div class="answers"> ${answers.join('')} </div>`
-      );
-    }
-  );
-
-  quizContainer.innerHTML = output.join(''); */
-
-
-
   animeQuestions.forEach((item) => 
     DOMSelectors.quizContainer.insertAdjacentHTML(
         "beforeend",
@@ -62,27 +28,30 @@ const buildQuiz = function(){
         <input type="radio" name="${item.number}" value="${item.answers.c}">
         <label for="${item.answers}">${item.answers.c}</label>  
       </li>
+      <li>
+        <input type="radio" name="${item.number}" value="${item.answers.d}">
+        <label for="${item.answers}">${item.answers.d}</label>  
+      </li>
     </ul>`
         )
     ); 
 };
 
-
 const showResults = function(){
   let numCorrect = 0;
-
   animeQuestions.forEach((question) => {
+    
     const userAnswer = document.querySelector(`input[name="${question.number}"]:checked`).value;
     
     if (userAnswer === `${question.correctAnswer}`) {
       numCorrect++;
-      document.getElementById(`${question.number}`).style.color = "light green";
+      document.getElementsByClassName(`${question.number}`).style.color = "light green";
 
     } else {
-      document.getElementById(`${question.number}`).style.color = "red";
+      document.getElementsByClassName(`${question.number}`).style.color = "red";
     }
   });
-//console.log (userAnswer);
+//console.log(numCorrect);
   DOMSelectors.resultsContainer.insertAdjacentHTML(
     "beforeend", `<li>${numCorrect} out of ${animeQuestions.length}</li>`);
 };
