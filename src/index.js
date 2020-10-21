@@ -47,10 +47,10 @@ const showResults = function () {
     ).value;
     if (userAnswer === `${ques.correctAnswer}`) {
       numCorrect++;
-      document.getElementById(`${ques.number}`).style.backgroundColor =
+      document.getElementsByClassName(`${ques.number}`).style.backgroundColor =
         "rgb(10,200,110)";
     } else {
-      document.getElementByC(`${ques.number}`).style.backgroundColor =
+      document.getElementsByClassName(`${ques.number}`).style.backgroundColor =
         "rgb(200,100,110)";
     }
 
