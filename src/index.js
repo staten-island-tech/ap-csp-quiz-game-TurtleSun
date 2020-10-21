@@ -47,7 +47,7 @@ const showResults = function(){
       if (userAnswer == `${ques.correctAnswer}`) {
         numCorrect++;
         document.getElementsByClassName(`${ques.number}`).style.color = "green";
-      } else if (userAnswer != "undefined") {
+      } else if (userAnswer != `${ques.correctAnswer}`) {
         document.getElementsByClassName(`${ques.number}`).style.color = "red";
       }
     
