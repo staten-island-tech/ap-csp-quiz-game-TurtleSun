@@ -1,7 +1,7 @@
 const animeQuestions = [
   {
     img:"media/dragonbz.jpg",
-    number: '1',
+    number: 1,
     question: "Can you name this anime/manga?",
     answers: {
       a: "Goku",
@@ -12,7 +12,7 @@ const animeQuestions = [
   },
   {
     img:"media/Naruto.png",
-    number: '2',
+    number: 2,
     question: "What is the name of this anime/manga?",
     answers: {
       a: "Naruto",
@@ -23,7 +23,7 @@ const animeQuestions = [
   },
   {
     img:"One-piece.png",
-    number: '3',
+    number: 3,
     question: "Who is this crew led by?",
     answers: {
       a: "Pirate Hunters",
@@ -35,7 +35,7 @@ const animeQuestions = [
   },
   {
     img:"Horimiya.jpg",
-    number: '4',
+    number: 4,
     question: "What is the name of this manga?",
     answers: {
       a: "Miyamura",
@@ -47,7 +47,7 @@ const animeQuestions = [
   },
   {
     img:"AC.jpg",
-    number: '5',
+    number: 5,
     question: "What is the name of the teacher in this anime?",
     answers: {
       a: "Assasination Classroom",
@@ -59,7 +59,7 @@ const animeQuestions = [
   },
   {
     img:"Banana-fish.jpg",
-    number: '6',
+    number: 6,
     question: "What is the name of this anime?",
     answers: {
       a: "Chiken wing",
@@ -71,7 +71,7 @@ const animeQuestions = [
   },
   {
     img:"Baccano.jpg",
-    number: '7',
+    number: 7,
     question: "Name the anime/manga.",
     answers: {
       a: "Gomennasai",
@@ -83,7 +83,7 @@ const animeQuestions = [
   },
   {
     img:"Tsuki-ga-kirei.jpg",
-    number: '8',
+    number: 8,
     question: "Name the main female character.",
     answers: {
       a: "Kotarou",
@@ -95,7 +95,7 @@ const animeQuestions = [
   },
   {
     img:"princess-mononoke.jpg",
-    number: '9',
+    number: 9,
     question: "Name the anime.",
     answers: {
       a: "Momonoke",
@@ -108,7 +108,7 @@ const animeQuestions = [
   },
   {
     img:"Log-horizon.jpg",
-    number: '10',
+    number: 10,
     question: "Name the anime.",
     answers: {
       a: "Log Horizon",

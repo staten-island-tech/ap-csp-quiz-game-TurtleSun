@@ -11,11 +11,11 @@ const buildQuiz = function(){
   animeQuestions.forEach((item) => 
     DOMSelectors.quizContainer.insertAdjacentHTML(
         "beforeend",
-    `<img class="anime-image" src="${item.img}" alt="">
+    `<img id="anime-image" src="${item.img}" alt="">
     <ul class="anime-list">
-      <li class="anime-question anime">Question: ${item.question}</li>
+      <li id="anime-question anime">Question: ${item.question}</li>
     </ul>
-    <ul class="anime-answers anime">Answers:
+    <ul id="anime-answers anime">Answers:
       <li>
         <input type="radio" name="${item.number}" value="${item.answers.a}">
         <label for="${item.answers}">${item.answers.a}</label>
@@ -37,7 +37,29 @@ const buildQuiz = function(){
     ); 
 };
 
-const showResults = function(){
+
+const showResults = function () {
+  var numCorrect = 0;
+
+  animeQuestions.forEach((ques) => {
+    const userAnswer = document.querySelector(
+      `input[name="${ques.number}"]:checked`
+    ).value;
+    if (userAnswer === `${ques.correctAnswer}`) {
+      numCorrect++;
+      document.getElementById(`${ques.number}`).style.backgroundColor =
+        "rgb(10,200,110)";
+    } else {
+      document.getElementByC(`${ques.number}`).style.backgroundColor =
+        "rgb(200,100,110)";
+    }
+
+    DOMSelectors.resultsContainer.insertAdjacentHTML(
+      "beforeend", `<li>${numCorrect} out of ${animeQuestions.length}</li>`);
+  });
+};
+
+/* const showResults = function(){
   let numCorrect = 0;
   animeQuestions.forEach((ques) => {
     if (document.querySelector(`input[name="${ques.number}"]:checked`)) {
@@ -47,16 +69,16 @@ const showResults = function(){
       if (userAnswer == `${ques.correctAnswer}`) {
         numCorrect++;
         document.getElementsByClassName(`${ques.number}`).style.color = "green";
-      } else if (userAnswer != `${ques.correctAnswer}`) {
+      } /* else if (userAnswer != `${ques.correctAnswer}`) {
         document.getElementsByClassName(`${ques.number}`).style.color = "red";
-      }
+      console.log(ques.number);
+      } 
     
     };
-//console.log(numCorrect);
   DOMSelectors.resultsContainer.insertAdjacentHTML(
     "beforeend", `<li>${numCorrect} out of ${animeQuestions.length}</li>`);
 });
-}
+} */
 DOMSelectors.submitButton.addEventListener('click', showResults);
 
 buildQuiz();
