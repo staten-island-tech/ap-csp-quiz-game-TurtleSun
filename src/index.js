@@ -39,23 +39,24 @@ const buildQuiz = function(){
 
 const showResults = function(){
   let numCorrect = 0;
-  animeQuestions.forEach((question) => {
+  animeQuestions.forEach((ques) => {
+    if (document.querySelector(`input[name="${ques.number}"]:checked`)) {
+      var userAnswer = document.querySelector(
+        `input[name="${ques.number}"]:checked`
+      ).value;
+      if (userAnswer == `${ques.correctAnswer}`) {
+        numCorrect++;
+        document.getElementsByClassName(`${ques.number}`).style.color = "green";
+      } else if (userAnswer != "undefined") {
+        document.getElementsByClassName(`${ques.number}`).style.color = "red";
+      }
     
-    const userAnswer = document.querySelector(`input[name="${question.number}"]:checked`).value;
-    
-    if (userAnswer === `${question.correctAnswer}`) {
-      numCorrect++;
-      document.getElementsByClassName(`${question.number}`).style.color = "light green";
-
-    } else {
-      document.getElementsByClassName(`${question.number}`).style.color = "red";
-    }
-  });
+    };
 //console.log(numCorrect);
   DOMSelectors.resultsContainer.insertAdjacentHTML(
     "beforeend", `<li>${numCorrect} out of ${animeQuestions.length}</li>`);
-};
-
+});
+}
 DOMSelectors.submitButton.addEventListener('click', showResults);
 
 buildQuiz();
