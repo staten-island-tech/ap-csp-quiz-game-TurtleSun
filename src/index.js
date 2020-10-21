@@ -11,11 +11,11 @@ const buildQuiz = function(){
   animeQuestions.forEach((item) => 
     DOMSelectors.quizContainer.insertAdjacentHTML(
         "beforeend",
-    `<img id="anime-image" src="${item.img}" alt="">
+    `<img class="anime-image" src="${item.img}" alt="">
     <ul class="anime-list">
-      <li id="anime-question anime">Question: ${item.question}</li>
+      <li class="anime-question anime">Question: ${item.question}</li>
     </ul>
-    <ul id="anime-answers anime">Answers:
+    <ul class="anime-answers anime">Answers:
       <li>
         <input type="radio" name="${item.number}" value="${item.answers.a}">
         <label for="${item.answers}">${item.answers.a}</label>
