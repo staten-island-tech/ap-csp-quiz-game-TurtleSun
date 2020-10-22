@@ -37,30 +37,30 @@ const buildQuiz = function(){
     </ul>`
         )
     ); 
-};
+}; 
 
 
 const showResults = function () {
   let numCorrect = 0;
 
   animeQuestions.forEach((ques) => {
-    const userAnswer = document.querySelector(
-      `input[name="${ques.number}"]:checked`
-    ).value;
-    if (userAnswer === `${ques.correctAnswer}`) {
+    const userAnswer = document.querySelector(`input[name="${ques.number}"]:checked`
+    ).value; 
+     if (userAnswer === `${ques.correctAnswer}`) {
       numCorrect++;
-      document.getElementsByClassName(`${ques.number}`).style.backgroundColor =
-        "rgb(10,200,110)";
+      document.getElementsByClassName(`${ques.number}`).style.color =
+        "green";
     } else {
-      document.getElementsByClassName(`${ques.number}`).style.backgroundColor =
-        "rgb(200,100,110)";
+      document.getElementsByClassName(`${ques.number}`).style.color =
+        "red";
     }
-
+    console.log (numCorrect);
     DOMSelectors.resultsContainer.insertAdjacentHTML(
-      "beforeend", `<li>${numCorrect} out of ${animeQuestions.length}</li>`);
+      "beforeend", `<li>${numCorrect} out of ${animeQuestions.length}</li>`); 
   });
 };
 
+showResults();
 /* const showResults = function(){
   let numCorrect = 0;
   animeQuestions.forEach((ques) => {
