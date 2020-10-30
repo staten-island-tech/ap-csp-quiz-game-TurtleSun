@@ -60,7 +60,6 @@ const showResults = function () {
   });
 };
 
-showResults();
 /* const showResults = function(){
   let numCorrect = 0;
   animeQuestions.forEach((ques) => {
